@@ -1,0 +1,47 @@
+﻿<Window x:Class="ST10059881_PROG6221_POE_P3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ST10059881_PROG6221_POE_P3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="527" Width="878">
+    <Window.Background>
+        <ImageBrush ImageSource="Resources/Quater-Mutton-Bunny.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <Frame x:Name="MainMenu" NavigationUIVisibility="Hidden"/>
+        <Label x:Name="lblAddRecipe" Grid.Column="1" Content="Add a Recipe ->" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontSize="20" BorderBrush="Chocolate" BorderThickness="4" Background="NavajoWhite"/>
+        <Label x:Name="lblDisplay" Grid.Column="1" Content="Display list of recipes ->" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" FontSize="17" BorderBrush="Chocolate" BorderThickness="4" Background="NavajoWhite"/>
+        <Label x:Name="lblSelect" Grid.Column="1" Content="Select a recipe ->" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" FontSize="20" BorderBrush="Chocolate" BorderThickness="4" Background="NavajoWhite"/>
+        <Label x:Name="lblScale" Grid.Column="1" Content="Scale a recipe ->" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" FontSize="20" BorderBrush="Chocolate" BorderThickness="4" Background="NavajoWhite"/>
+        <Label x:Name="lblClear" Grid.Column="1" Content="Clear all recipes ->" HorizontalAlignment="Center" Grid.Row="5" VerticalAlignment="Center" FontSize="20" BorderBrush="Chocolate" BorderThickness="4" Background="NavajoWhite"/>
+        <Label x:Name="lblFilter" Grid.Column="1" Content="Filter Feature ->" HorizontalAlignment="Center" Grid.Row="6" VerticalAlignment="Center" FontSize="20" BorderBrush="Chocolate" BorderThickness="4" Background="NavajoWhite"/>
+        <Label x:Name="lblExit" Grid.Column="1" Content="Exit ->" HorizontalAlignment="Center" Grid.Row="7" VerticalAlignment="Center" FontSize="20" BorderBrush="Chocolate" BorderThickness="4" Background="NavajoWhite"/>
+        <Button x:Name="btnAddRecipe" Grid.Column="2" Content="Add Recipe" HorizontalAlignment="Left" Margin="53,20,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.573,-0.36" Width="80" Height="30" Background="LightGreen" BorderBrush="DarkGreen" BorderThickness="6" Click="btnAddRecipe_Click"/>
+        <Button x:Name="btnDisplay" Grid.Column="2" Content="Display" HorizontalAlignment="Left" Margin="53,0,0,0" Grid.Row="2" VerticalAlignment="Center" RenderTransformOrigin="-5.083,0.331" Width="80" Height="30" Background="LightGreen" BorderBrush="DarkGreen" BorderThickness="6" Click="btnDisplay_Click"/>
+        <Button x:Name="btnSelect" Grid.Column="2" Content="Select" HorizontalAlignment="Left" Margin="53,0,0,0" Grid.Row="3" VerticalAlignment="Center" Width="80" Height="30" Background="LightGreen" BorderBrush="DarkGreen" BorderThickness="6" Click="btnSelect_Click"/>
+        <Button x:Name="btnScale" Grid.Column="2" Content="Scale" HorizontalAlignment="Left" Margin="53,0,0,0" Grid.Row="4" VerticalAlignment="Center" Width="80" Height="30" Background="LightGreen" BorderBrush="DarkGreen" BorderThickness="6" Click="btnScale_Click"/>
+        <Button x:Name="btnClear" Grid.Column="2" Content="Clear" HorizontalAlignment="Left" Margin="53,0,0,0" Grid.Row="5" VerticalAlignment="Center" Width="80" Height="30" Background="LightGreen" BorderBrush="DarkGreen" BorderThickness="6" Click="btnClear_Click"/>
+        <Button x:Name="btnFilter" Grid.Column="2" Content="Filter" HorizontalAlignment="Left" Margin="53,0,0,0" Grid.Row="6" VerticalAlignment="Center" Width="80" Height="30" Background="LightGreen" BorderBrush="DarkGreen" BorderThickness="6" Click="btnFilter_Click"/>
+        <Button x:Name="btnExit" Grid.Column="2" Content="Exit" HorizontalAlignment="Left" Margin="53,0,0,0" Grid.Row="7" VerticalAlignment="Center" Width="80" Height="30" Background="Red" BorderBrush="IndianRed" BorderThickness="6" Click="btnExit_Click"/>
+
+    </Grid>
+</Window>

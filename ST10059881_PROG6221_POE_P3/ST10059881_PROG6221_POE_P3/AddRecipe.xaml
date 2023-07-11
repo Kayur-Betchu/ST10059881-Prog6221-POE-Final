@@ -1,0 +1,53 @@
+﻿<Window x:Class="ST10059881_PROG6221_POE_P3.AddRecipe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ST10059881_PROG6221_POE_P3"
+        mc:Ignorable="d"
+        Title="AddRecipe" Height="450" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="Resources/Pots.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <Frame x:Name="AddingRecipeDetails" NavigationUIVisibility="Hidden"/>
+        <Label x:Name="lblNameOfRecipe" Grid.Column="1" Content="Name of Recipe:" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Background="Cyan"/>
+        <Label x:Name="lblIngredient" Grid.Column="2" Content="Ingredients Name:" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Background="Cyan" Margin="168,12,0,0"/>
+        <Label x:Name="lblCalories" Grid.Column="2" Content="Calories:" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Background="Cyan" Margin="195,12,0,0"/>
+        <Label x:Name="lblQuantity" Grid.Column="2" Content="Quantity" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top" Background="Cyan" Margin="194,12,0,0"/>
+        <Label x:Name="lblUnit" Grid.Column="2" Content="Unit of measurement:" HorizontalAlignment="Left" Grid.Row="4" VerticalAlignment="Top" Background="Cyan" Margin="162,12,0,0"/>
+        <Label x:Name="lblFoodGroup" Grid.Column="2" Content="Food Group:" HorizontalAlignment="Left" Grid.Row="5" VerticalAlignment="Top" Background="Cyan" Margin="184,12,0,0"/>
+        <Label x:Name="lblSteps" Grid.Column="2" Content="Steps" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Center" Background="Cyan" Margin="449,0,0,0" />
+        <TextBox x:Name="txtRecipeName" Grid.Column="2" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120" BorderBrush="RoyalBlue" BorderThickness="2"/>
+        <TextBox x:Name="txtIngredientName" Grid.Column="2" HorizontalAlignment="Left" Margin="292,15,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" BorderBrush="RoyalBlue" BorderThickness="2"/>
+        <TextBox x:Name="txtCalories" Grid.Column="2" HorizontalAlignment="Left" Margin="292,15,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" BorderBrush="RoyalBlue" BorderThickness="2"/>
+        <TextBox x:Name="txtQuantity" Grid.Column="2" HorizontalAlignment="Left" Margin="292,15,0,0" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" BorderBrush="RoyalBlue" BorderThickness="2"/>
+        <TextBox x:Name="txtUnit" Grid.Column="2" HorizontalAlignment="Left" Margin="292,15,0,0" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" BorderBrush="RoyalBlue" BorderThickness="2"/>
+        <TextBox x:Name="txtFoodGroup" Grid.Column="2" HorizontalAlignment="Left" Margin="292,15,0,0" Grid.Row="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" BorderBrush="RoyalBlue" BorderThickness="2"/>
+        <TextBox x:Name="txtSteps" Grid.Column="2" HorizontalAlignment="Left" Margin="503,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120" BorderBrush="RoyalBlue" BorderThickness="2"/>
+        <Button x:Name="btnAddRecipe" Grid.Column="2" Content="Add" HorizontalAlignment="Left" Margin="30,0,0,0" Grid.Row="8" VerticalAlignment="Center" Width="80" Background="GreenYellow" Click="btnAddRecipe_Click"/>
+        <Button x:Name="btnMain" Grid.Column="1" Content="Main Menu" HorizontalAlignment="Center" Grid.Row="8" VerticalAlignment="Center" Width="80" Background="Tomato" Click="btnMain_Click"/>
+        <Button x:Name="btnAddIngredient" Grid.Column="2" Content="Add Ingredient" HorizontalAlignment="Left" Margin="310,10,0,0" Grid.Row="6" VerticalAlignment="Top" Background="GreenYellow" Click="btnAddIngredient_Click"/>
+        <Button x:Name="btnAddStep" Grid.Column="2" Content="Add Step" HorizontalAlignment="Left" Margin="537,42,0,0" Grid.Row="1" VerticalAlignment="Top" Background="GreenYellow" Grid.RowSpan="2" Click="btnAddStep_Click"/>
+
+    </Grid>
+</Window>
